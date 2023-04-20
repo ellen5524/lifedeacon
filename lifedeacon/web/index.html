@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>生活助理</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!--firebase JavaScript-->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			var firebaseConfig = {
+			apiKey: "AIzaSyC6K7WBINJcZxYxzj8YvHvLoQ30ILQjhVE",
+			authDomain: "ligedeacon.firebaseapp.com",
+			projectId: "ligedeacon",
+			storageBucket: "ligedeacon.appspot.com",
+			messagingSenderId: "686933277301",
+			appId: "1:686933277301:web:e38001f08fdcb4fa3f163c",
+			measurementId: "G-7PJ4LG95XM"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			
+			var db = firebase.firestore();
+		</script>
+		
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">生活助理</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<li><a href="signup.php">立即註冊</a></li>
+											<li><a href="login.php">登入</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>生活助理</h2>
+							<p>天氣預報、隨手記事、求神問卜<br />
+							你最貼心的生活助理<br /></p>
+							<ul class="actions special">
+								<li><a href="login.php" class="button primary">立即使用</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>天氣預報、隨手記事、求神問卜<br />
+								最貼近你的心——生活助理</h2>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>天氣乎哩災<br />
+								不怕忘帶傘</h2>
+								<p>
+									〔firstsite.html〕<br>
+									抓取中央氣象局的Open Data，獲得當下的天氣預報。
+								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>貼心隨手記<br />
+								辦事不怕忘</h2>
+								<p>
+									〔todolist.html〕<br>
+									線上記事本，透過firebase儲存使用者的記事。
+								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>人生有困難<br />
+								問神求心安</h2>
+								<p>
+									〔draw.html〕<br>
+									將臺灣擲筊抽籤文化轉成線上版，詩籤選用雷雨詩一百籤，抓取［draw.json〕，來源下收。
+								</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>詳細檔案介紹 AND 參考資料來源</h2>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane">
+									<h3>詳細檔案介紹</h3>
+									<p>
+										<h1>〔index.html〕&〔readme.html〕</h1><br>
+										基本上內容是一樣的，分為〔index.html〕是未登入的首頁，〔readme.html〕是登入後首頁。<br><br>
+										<h1>〔login.php〕</h1><br>
+										登入頁面。<br><br>
+										<h1>〔signup.html〕</h1><br>
+										註冊頁面。<br><br>
+										<h1>〔firstsite.html〕</h1><br>
+										天氣預報功能頁面，抓取中央氣象局的Open Data，判斷使用者所在地當下的天氣預報。<br><br>
+										<h1>〔todolist.html〕</h1><br>
+										隨手記功能頁面，線上記事本，透過firebase儲存已登入使用者的記事。<br><br>
+										<h1>〔draw.html〕</h1><br>
+										擲筊功能頁面，將臺灣擲筊抽籤文化轉成線上版，詩籤選用雷雨詩一百籤，抓取［draw.json〕，來源下收。<br><br>
+										<h1>〔draw.json〕</h1><br>
+										雷雨詩一百籤。<a href="https://github.com/you2245g/jsUnderground/blame/master/LV14-Draw/draw.json">來源為此連結</a>。沒有參考程式。<br><br>
+										<h1>〔favicon.ico〕</h1><br>
+										網頁的icon，自己用PhotoShop做的。<br><br>
+										<h1>〔assets/css/mycss.css〕</h1><br>
+										自己新增的所有有用到的CSS檔。<br><br>
+										<h1>〔assets/js/cookie.js〕</h1><br>
+										判斷cookie的JS。<a href="https://www.fooish.com/javascript/cookie.html">來源為此連結</a>，複製貼上借用的。<br><br>
+										<h1>〔assets/css/myjs.js〕</h1><br>
+										主要用於〔firstsite.html〕的js檔，自己寫的。<br><br>
+										<h1>〔assets/css/todolist.js〕</h1><br>
+										主要用於〔todolist.html〕〕的js檔，自己寫的。<br><br>
+										<h1>〔assets/css/draw.js〕</h1><br>
+										主要用於〔draw.html〕〕的js檔，自己寫的。<br><br>
+										<h1>〔images〕</h1><br>
+										照片素材來自此，<a href="https://unsplash.com/">來源為此連結</a>。筊杯圖是自己畫的。<br><br>
+										<h1>〔其他〕</h1><br>
+										其他檔案為模板原有檔案。<a href="https://html5up.net/">來源為此連結</a><br><br>
+									</p>
+								</li>
+								<li class="icon solid fa-laptop">
+									<h3>參考資料來源</h3>
+									<p>
+										<h1>〔<a href="https://opendata.cwb.gov.tw/index">氣象開放平台</a>〕</h1><br><br>
+										<h1>〔<a href="https://www.oxxostudio.tw/articles/201905/firebase-firestore.html">Firebase教學</a>〕</h1><br><br>
+										<h1>〔<a href="https://shubo.io/cookies/#%E5%A6%82%E4%BD%95%E7%94%A8-javascrip-%E5%AF%AB%E5%85%A5-cookie">js-cookie教學</a>〕</h1><br><br>
+										<h1>〔<a href="https://www.fooish.com/javascript/cookie.html">js-cookie教學2</a>〕</h1><br><br>
+										<h1>〔<a href="https://ithelp.ithome.com.tw/articles/10191867">DOM Node建立、刪除與修改</a>〕</h1><br><br>
+										<h1>〔<a href="https://wcc723.github.io/css/2017/07/21/css-flex/">CSS Flex 屬性一點也不難</a>〕</h1><br><br>
+										<h1>〔<a href="https://github.com/you2245g/jsUnderground/blame/master/LV14-Draw/draw.json">雷雨詩一百首JSON</a>〕</h1><br><br>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 生活助理</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

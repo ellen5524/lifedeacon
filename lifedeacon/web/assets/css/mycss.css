@@ -1,0 +1,246 @@
+#head .more:after {
+	background-image: url("images/arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: block;
+	height: 1.5em;
+	left: 50%;
+	margin: 0 0 0 -0.75em;
+	position: absolute;
+	width: 1.5em;
+}
+
+#timebox{
+	font-size: 6em;
+	letter-spacing:30px;
+	margin:30px;
+}
+
+#T{
+	font-size: 5em;
+}
+
+.T{
+	justify-content:center;
+	align-content: center;
+}
+
+.two{
+	font-size:20pt;
+	letter-spacing:15px;
+	margin:20px 0 20px 0;
+}
+
+.I>span{
+	font-size:20pt;
+	margin-left:30px;
+}
+
+.I, .T, .add, .listitem, #draw_up{
+	display:flex;
+	flex-direction:row;
+}
+
+@media screen and (max-width: 1680px) {
+	#timebox{
+		font-size: 8em;
+		letter-spacing:30px;
+		margin:30px;
+	}
+	
+
+}
+
+@media screen and (max-width: 1280px) {
+	.I{
+		display:flex;
+		flex-direction:row;
+	}
+	.I>span{
+		font-size:24px;
+		/*margin:0 2em 0 1em;*/
+	}
+	#timebox{
+		font-size: 6em;
+		letter-spacing:30px;
+		/*margin:30px;*/
+	}
+	#T{
+		font-size:3em;
+		margin:0.4em 0 0 0;
+	}
+	.I{
+		margin:0.9em 0 0 1em;				
+	}			
+
+}
+
+@media screen and (max-width: 736px) {
+	#timebox{
+		font-size: 2em;
+		letter-spacing:10px;
+		margin:30px;
+	}
+	#T{
+		font-size:4em;
+		margin:0.4em 0 0 0;
+	}
+	.I{
+		display:flex;
+		flex-direction:column;
+		margin:0.9em 0 0 1em;				
+	}
+	.I>span{
+		font-size:1.5em;
+		margin-left:0px;			
+	}
+	.two{
+		font-size:1.5em;
+		letter-spacing:0px;
+		margin:20px 0 20px 0;
+	}
+	#draw_up{
+		display:flex;
+		align-items:center;
+		flex-direction:column;
+	}
+	.tos{
+		margin:2em 0 0 0!important;
+	}
+	.goo{
+		display:flex;
+		align-items:center;
+		margin:2em 0 0 5em;
+	}
+	#addnew{
+		padding:0 1em 0 1em;
+	}
+	.listitem{
+		margin-left:0;
+		display:flex;
+		flex-direction:column;
+	}
+
+	.listitemin, .completeitem{
+		width: 100%!important;
+		margin:10px 0 10px 0;
+	}
+	.listbutton_modify, .listbutton_delete, .listbutton_complete{
+		width: 30%!important;
+		padding:0 2em 0 2em!important;
+		margin-left:10px!important;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	#timebox{
+		font-size: 2em;
+		letter-spacing:10px;
+		margin:30px;
+	}
+	#T{
+		font-size:4em;
+		margin:0.4em 0 0 0;
+	}
+	.I{
+		display:flex;
+		flex-direction:column;
+		margin:0.9em 0 0 1em;				
+	}
+	.I>span{
+		font-size:1.2em;
+		margin-left:0px;			
+	}
+	.two{
+		font-size:1.3em;
+		letter-spacing:0px;
+		margin:20px 0 20px 0;
+	}
+	.listitemin, .completeitem{
+		width: 100%!important;
+		margin:10px 0 10px 0;
+	}
+	.listbutton_modify, .listbutton_delete, .listbutton_complete{
+		width: 30%!important;
+		padding:0 2em 0 2em!important;
+		margin-left:10px!important;
+	}
+}
+#addnew{
+	margin-left:10px;
+}
+
+.add>input{
+	width:75%;
+	margin-bottom: 10px;
+}
+
+.listitem{
+	margin-left:0;
+}
+
+.listitemin{
+	width: 50%!important;
+	font-size: 18px;
+	margin-bottom:10px;
+}
+
+.button_item{
+	width:50%!important;
+}
+
+.listbutton_modify, .listbutton_delete, .listbutton_complete{
+
+	margin-left:10px;
+}
+
+.completeitem{
+	height: 2.75em;
+	color:#ffffff;
+	text-decoration:line-through!important;
+	background-color: rgba(0, 0, 0, 0.475);
+	border-radius: 3px;
+    border: none;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 50%!important;
+	font-size: 18px;
+    margin-bottom: 10px;
+	line-height:2.75em;
+	height:2.75em;
+}
+
+#draw_up{
+	display:flex;
+	align-items:center;
+}
+
+.tos{
+	margin:0 5em 0 8em;
+}
+
+#Toss{
+	display:flex;
+	flex-direction:row;
+	margin:0 0 2em 0;
+}
+
+.tossimg{
+	width:100px;
+	height:200px;
+}
+
+.daikiji{
+	font-size:2em;
+	line-height:2em;
+}
+
+.goo{
+	display:flex;
+	align-items:center;
+	margin:2em 0 0 5em;
+}
